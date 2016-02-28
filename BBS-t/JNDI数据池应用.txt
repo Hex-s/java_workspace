@@ -1,0 +1,42 @@
+第一步：
+
+在tomcat的context.xml添加数据源信息
+<Resource name="jndi/mysource" 
+				auth="Container" 
+				type="javax.sql.DataSource" 
+				driverClassName="oracle.jdbc.driver.OracleDriver" 
+				url="jdbc:oracle:thin:@localhost:1521:niit" 
+				username="system" 
+				password="niit" 
+				maxActive="20" 
+				maxIdle="10" 
+				maxWait="10000"/>
+
+
+
+
+
+第二步：
+
+使用Context对象加载数据源
+Context context=new InitialContext();
+			
+			dataSource=(DataSource)context.lookup("java:comp/env/jndi/mysource");
+			
+			//con=dataSource.getConnection();
+			
+		} catch (NamingException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+		} 
+
+
+注意点：
+1 web.xml中的引用的资源名应和context.xml中的资源名一致
+2 web容器中应添加数据库驱动文件
+3 java中访问的数据源应在web容器开启后在jsp或者是servlet中调用
+
+
+

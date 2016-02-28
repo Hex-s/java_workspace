@@ -1,0 +1,15 @@
+*{font-size:13px}
+#body{margin: auto; width: 1000px;}
+#title{height: 60px; background-color: #069;  line-height: 60px;background-color: #ACDAFE;}
+#index_table{width:1000px;}
+#login{height: 40px; padding-left: 20px; line-height: 40px}
+a{text-decoration: none; color: #00344D}
+a:hover{text-decoration:underline; color:#06C}
+#boardContent{width: 100%; border-top: 1px solid #D7D7D7; border-left: 1px solid #D7D7D7;border-right: 1px solid #D7D7D7}
+#boardContent td{border-bottom: 1px solid #D7D7D7;  }
+.boardEnter{background-color: white}
+.childBoardRow{border-bottom: 1px solid #D7D7D7; }
+#replyTab td{border-bottom: gray 1px solid;}
+.register{font-size: 11px;color: red;float: left;height: 30px;line-height: 30px;}
+.list{width: 20px;border: white 1px solid;background-color: #F5F5F4;float:left;text-align:center;}
+.topicEdit{font-size: 8px;}

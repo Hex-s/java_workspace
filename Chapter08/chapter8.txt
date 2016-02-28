@@ -1,0 +1,29 @@
+public class Foo{
+	public void method(){
+	}
+	//
+}
+
+
+1. private void method(){}F
+2. public int method(){}F
+3. public void foo(){}T
+4. public Foo(){}T
+5. public int method(int a){}T
+6. public void method(int a, int b){}T
+7. protected void method(int b, int a){}F
+8. public foo(){}F
+9. protected Foo(String s){}T
+10.public Foo(String s, double d){}T
+11.public void Method(String s){}T
+
+
+被继承的类乘坐父类，也称为基类，超类
+用于继承父类的类称为子类，也称为派生类（衍生类）
+Java的继承原则是单继承模式(is-a)，即一个子类只能拥有一个父类
+继承的目的在于扩展父类的代码结构
+继承还能实现多态性的设计
+
+Object类是Java中所有类的基类
+任何一个自定义Java类在运行时，JVM都会隐式让该类继承自Object
+Object具备的方法hashCode,equals,waite,notify,notifyAll

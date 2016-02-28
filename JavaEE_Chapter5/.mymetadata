@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JavaEE_Chapter5"
+  id="myeclipse.1416273627640"
+  context-root="/JavaEE_Chapter5"
+  j2ee-spec="5.0"
+  archive="JavaEE_Chapter5.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

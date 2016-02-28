@@ -1,0 +1,17 @@
+变量是计算机中用来存储数据的基本单元
+
+Java中存在包装类,包装类用来强化现有的数据类型，使原本功能单一的数据类型具备更多的功能
+
+常值
+变量
+
+
+firstDay
+2Day
+my_name
+String
+publicString
+VoidMethod
+note pad
+name3
+string

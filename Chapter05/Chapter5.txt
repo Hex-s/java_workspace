@@ -1,0 +1,16 @@
+Integer
+Float
+Double
+Boolean
+String
+.....
+
+以上都是数据类型，都是通过public class xxx来创建的
+因此当我们去写public class创建java类的时候都是在定义一个新的数据类型
+
+创建的java类由于是对象的类型，因此是抽象，真正去运用java类，需要将抽象的类型变成为具体的实体，即对象，因此将java类转变成对象的过程就称作是实例化
+
+Random random = new Random();
+
+类中每一个属性实际上也是一个一个的对象，所有属性的类型在Java中统称为Field类型，每一个类中的方法也是对象，该类型为method类型
+类在进行实例化的过程中，需要先将类中的属性和方法，即Field类型和Method类型先进行实例化，然后在再对整个类框架进行实例化操作，由JVM分配各个对象的内存结构，没有值得情况给予默认值

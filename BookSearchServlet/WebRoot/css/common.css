@@ -1,0 +1,11 @@
+*{font-size:13px}
+a{text-decoration: none;}
+#body{margin: auto; width: 1000px;}
+.bookList{border-bottom: 1px E8F2FE solid;height: 30px;}
+#title{height: 60px; background-color: #069;  line-height: 60px;background-color: #ACDAFE;}
+.loginState{float: right;padding-top: 15px;padding-right: 5px;}
+#title a:hover{text-decoration: underline;color: red;}
+#logo{font-size: 25px;width:300px;float:left;padding-left: 10px;s}
+.td{height:25px;padding-left: 10px;}
+.nullContent{text-align: center;color: red;font-size: 16px;font-weight: bold;}
+.collect{color:F77906;}

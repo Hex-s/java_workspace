@@ -1,0 +1,7 @@
+ServletRequest 接口
+HttpServletRequest 接口
+
+Java程序运行需要先运行WEB容器的实例，将Java程序部署在WEB容器中后，由WEB容器负责对项目中的WEB.XML进行解析，XML解析是将标签中的标签体内容及属性值进行获取。当解析完毕Servlet标签后会根据servlet-class实例化对应的servlet类，根据servlet-name将创建后的servlet实例以键值对的方式存储在WEB容器中，再通过servlet-mapping保存网络请求地址与servlet的关联。如果有请求发送至web容器，web容器将根据请求的路径在url-pattern查找对应name的servlet实例，找到servlet实例后，再web容器调用service方法
+
+
+请求----WEB容器----searchName(web.xml中的url-pattern)获取servletName-----searchServlet(String name)获取servlet实例对象(servletOjb)-----servletObj.service(request,response)----根据request中获取的请求方式调用doGet,doPost

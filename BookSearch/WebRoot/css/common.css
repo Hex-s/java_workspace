@@ -1,0 +1,7 @@
+*{font-size:13px}
+a{text-decoration: none;}
+#body{margin: auto; width: 1000px;}
+#title{height: 60px; background-color: #069;  line-height: 60px;background-color: #ACDAFE;}
+#title a:hover{text-decoration: underline;color: red;}
+#logo{font-size: 25px;width:300px;float:left;padding-left: 10px;s}
+.td{height:25px;padding-left: 10px;}

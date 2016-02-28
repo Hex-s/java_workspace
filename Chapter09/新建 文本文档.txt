@@ -1,0 +1,23 @@
+C extends B
+B extends A
+A extends Base
+
+A a1 = new B();T
+A a2 = new C();T
+B b1 = new C();T
+//B b = new A();F
+//C c = new A();F
+//C c = new B();F
+
+a1 = a2 T
+a2 = a1 T
+a1 = b1 T
+a2 = b1 T
+b1 = (B)a1 T
+b1 = (B)a2 T
+
+
+
+public void method(Base base){
+
+}

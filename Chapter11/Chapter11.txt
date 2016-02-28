@@ -1,0 +1,25 @@
+HashSet的add(E e)方法会调用HashMap的put方法
+HashMap是键值对存储的集合，HashSet中add的元素将作为键存入HashMap
+put(e,new Object())
+HashMap的结构是有Entry数组来构成，Entry表示一组键值对
+table是HashMap中Entry数组的变量名
+
+
+e.hash == hash && ((k = e.key) == key || key.equals(k))
+
+e.hash == hash 表示如果添加的元素的哈希码值和集合中现有元素的哈希码值是相同的
+
+((k = e.key) == key || key.equals(k))
+如果要添加的元素的地址和集合中现有的元素地址是相同的
+或者
+要添加的元素和集合中现有元素的equals方法比较是成立的
+
+
+如果equals是Object的方法那么key.equals(k)就等于key == k
+
+
+
+DAO数据分层设计模式
+DAO是Data Access Object 表示数据访问对象
+
+

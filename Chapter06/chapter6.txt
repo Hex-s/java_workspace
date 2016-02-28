@@ -1,0 +1,53 @@
+/*com.niit.employee包中有个A类，A类中有个method方法
+com.niit.deptment包中有个B类，B类中也有个method方法，
+但是B的这个方法需要调用A类的method方法，该如何实现*/
+
+
+
+package com.niit.employee;
+//代码填写
+public class A{
+
+	public void method(){
+
+	}
+}
+
+
+//代码填写
+package com.niit.deptment;
+import com.niit.employee;
+
+
+public class B{
+
+	public void method(){
+		A a = new A();
+		a.method();
+	}
+}
+
+ftf
+ttt
+tff
+fff
+
+public class String{
+
+	public int length(){
+		return int
+	}
+}
+
+"hello" 字符串中的每一个字符都有一个对应的索引位置，索引从0开始
+题目要求：//编写方法要求根据指定的字符出现的次数，获取该字符所在索引
+
+判断邮箱地址的合法性
+1 要有@
+2 要有.
+3 @和.不能出现在首尾位置
+4 @只能出现1次
+5 .不能出现在@的前面
+6 .和@不能相邻
+7 .和.不能相邻
+

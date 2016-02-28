@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<!-- 配置搜索图书servlet -->	
+	<servlet>
+		<servlet-name>searchBook</servlet-name>
+		<servlet-class>com.niit.servlet.SearchBookServlet</servlet-class>
+	</servlet>
+	<!-- 配置搜索图书servlet的映射 -->
+	<servlet-mapping>
+		<servlet-name>searchBook</servlet-name>
+		<url-pattern>/searchBook.do</url-pattern>
+	</servlet-mapping>
+	<!-- 配置登录servlet -->	
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.niit.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<!-- 配置登录servlet的映射 -->
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet.do</url-pattern>
+	</servlet-mapping>
+	<!-- 配置退出登录servlet -->	
+	<servlet>
+		<servlet-name>exitLoginServlet</servlet-name>
+		<servlet-class>com.niit.servlet.ExitLoginServlet</servlet-class>
+	</servlet>
+	<!-- 配置退出登录servlet的映射 -->
+	<servlet-mapping>
+		<servlet-name>exitLoginServlet</servlet-name>
+		<url-pattern>/exitLoginServlet.do</url-pattern>
+	</servlet-mapping>
+	<!-- 配置图书信息servlet -->	
+	<servlet>
+		<servlet-name>bookInfo</servlet-name>
+		<servlet-class>com.niit.servlet.BookInfoServlet</servlet-class>
+	</servlet>
+	<!-- 配置图书信息servlet的映射 -->
+	<servlet-mapping>
+		<servlet-name>bookInfo</servlet-name>
+		<url-pattern>/bookInfo.do</url-pattern>
+	</servlet-mapping>
+	<!-- 配置收藏servlet -->	
+	<servlet>
+		<servlet-name>collect</servlet-name>
+		<servlet-class>com.niit.servlet.CollectServlet</servlet-class>
+	</servlet>
+	<!-- 配置收藏servlet的映射 -->
+	<servlet-mapping>
+		<servlet-name>collect</servlet-name>
+		<url-pattern>/collect.do</url-pattern>
+	</servlet-mapping>
+	<!-- 配置取消收藏servlet -->	
+	<servlet>
+		<servlet-name>deleteCollect</servlet-name>
+		<servlet-class>com.niit.servlet.CancleCollectServlet</servlet-class>
+	</servlet>
+	<!-- 配置取消收藏servlet的映射 -->
+	<servlet-mapping>
+		<servlet-name>deleteCollect</servlet-name>
+		<url-pattern>/deleteCollect.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

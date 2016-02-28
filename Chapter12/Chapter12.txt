@@ -1,0 +1,4 @@
+Component 是Java中所有组件的基类
+Container 是所有容器的基类
+
+JComponent 是SWING中所有允许添加至容器中的组件基类
